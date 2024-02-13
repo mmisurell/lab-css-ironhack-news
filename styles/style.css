@@ -230,18 +230,16 @@ header {
   text-align: justify;
 }
 .articles-container {
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0;
-  width: 25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start; /* Adjust align-items property */
 }
 .article {
-  display: flex;
-  flex-wrap: wrap-reverse;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 15rem;
+  flex: 0 0 48%; /* Adjust flex property */
+  margin-bottom: 20px; /* Add margin to separate articles */
 }
+
 .main-article .image {
   width: 50%;
 }
